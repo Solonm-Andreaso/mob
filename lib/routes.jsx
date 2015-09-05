@@ -16,6 +16,7 @@ exposed.route("/Login", {
         renderMainLayout(<Login />)
     }
 });
+<<<<<<< HEAD
 
 exposed.route('/Register', {
     name: "Register",
@@ -25,6 +26,16 @@ exposed.route('/Register', {
 })
 
 
+=======
+/*
+exposed.route("/Register", {
+    name: "Register",
+    action(params) {
+        renderMainLayout(<UserLogin />)
+    }
+});
+*/
+>>>>>>> master
 exposed.route("/", {
     name: "Home",
     action(params) {
@@ -32,6 +43,15 @@ exposed.route("/", {
     }
 });
 
+FlowRouter.notFound = {
+    // Subscriptions registered here don't have Fast Render support.
+    subscriptions: function() {
+
+    },
+    action: function() {
+        renderMainLayout(<NotFound />)
+    }
+};
 
 renderMainLayout = (component) => {
     ReactLayout.render(MainLayout, {
