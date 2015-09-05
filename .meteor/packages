@@ -7,5 +7,10 @@
 meteor-platform
 autopublish
 insecure
-bootstrap
-iron:router
+react
+jquery
+kadira:flow-router
+kadira:react-layout
+accounts-password
+twbs:bootstrap
+fourseven:scss
