@@ -13,9 +13,16 @@ loggedIn = FlowRouter.group({
 exposed.route("/Login", {
     name: "Login",
     action(params) {
-        renderMainLayout(<UserLogin />)
+        renderMainLayout(<Login />)
     }
 });
+
+exposed.route('/Register', {
+    name: "Register",
+    action(params) {
+        renderMainLayout(<Register />)
+    }
+})
 
 
 exposed.route("/", {
