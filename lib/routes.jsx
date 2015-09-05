@@ -16,7 +16,6 @@ exposed.route("/Login", {
         renderMainLayout(<Login />)
     }
 });
-<<<<<<< HEAD
 
 exposed.route('/Register', {
     name: "Register",
@@ -26,16 +25,6 @@ exposed.route('/Register', {
 })
 
 
-=======
-/*
-exposed.route("/Register", {
-    name: "Register",
-    action(params) {
-        renderMainLayout(<UserLogin />)
-    }
-});
-*/
->>>>>>> master
 exposed.route("/", {
     name: "Home",
     action(params) {

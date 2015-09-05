@@ -17,14 +17,14 @@ KInput = React.createClass({
         return true;
     },
     render() {
-
         const { label, type, name, value } = this.props
 
         return(
             <div className="form-group">
-              <label>{label}</label>
-              <input type={type} className="form-control" value={value} name={name} ref={name} placeholder={label} />
+                <label>{label}</label>
+                <input type={type} className="form-control" value={value} name={name} ref={name} placeholder={label} />
             </div>
-          )
+        )
+
     }
 })
